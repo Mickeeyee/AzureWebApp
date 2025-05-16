@@ -1,7 +1,6 @@
 # 🔐 Configure Authentication for an Azure Web App
 
-This project demonstrates how I implemented user authentication on an Azure-hosted web application using **Azure App Service Authentication/Authorization** (also known as Easy Auth). This is essential for securing access to web apps without writing any custom authentication logic.
-
+This project demonstrates how I configured authentication and secured network access for an Azure-hosted web application using Microsoft Entra ID (formerly Azure Active Directory), virtual network peering, and network security groups (NSGs).
 ---
 
 ## 🎯 Objective
@@ -59,6 +58,35 @@ Connect to VM1 through RDP ![image](https://github.com/user-attachments/assets/f
 ![image](https://github.com/user-attachments/assets/eb1b5239-c575-4729-ba1f-5dbf8e552b16)
 On VM1, run the following command in Windows PowerShell® to install Internet Information Services (IIS):
 ![image](https://github.com/user-attachments/assets/6923490b-c8a3-45d7-af0b-95010b6cdb33) ![image](https://github.com/user-attachments/assets/0c4d17a5-0ed5-43db-83d2-ebd1897e671c)
+
+
+
+
+
+
+
+🔧 What This Project Covers
+🔐 Authentication with Microsoft Entra ID
+Registered the web app in Azure AD (Microsoft Entra ID).
+
+Enabled App Service Authentication (Easy Auth) to require users to sign in with Microsoft accounts before accessing the app.
+
+🌐 Network Configuration & Peering
+Created two virtual networks and configured peering between them for secure inter-VNet communication.
+
+Verified connectivity using Azure CLI (az network vnet commands).
+
+🔒 Security Groups and Access Rules
+Created and associated Application Security Groups (ASGs) to organize and isolate traffic to virtual machines and web subnets.
+
+Set up Network Security Groups (NSGs) with custom inbound rules for HTTP/HTTPS access.
+
+💻 Virtual Machine Deployment
+Deployed an Azure virtual machine (VM1) into the peered network.
+
+Installed IIS (Internet Information Services) to host a basic web application.
+
+Connected via RDP and tested network access to confirm successful setup.
 
 
 
