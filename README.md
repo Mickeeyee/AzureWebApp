@@ -123,17 +123,3 @@ Connected via RDP and tested network access to confirm successful setup.
 
 
 
----
-
-## 🔧 Tools & Services Used
-
-- Microsoft Azure App Services
-- Azure Active Directory (App Registrations)
-- GitHub (for deployment)
-- VS Code (code editing and publishing)
-
----
-
-## ✅ Key Learnings
-
-- How to enforce user authentication in an Azure-ho
